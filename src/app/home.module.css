@@ -1,0 +1,63 @@
+.container {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #0b0b0b;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  background: #00C896;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f8f8f8;
+  letter-spacing: -0.5px;
+}
+
+.body {
+  font-size: 16px;
+  color: #a0a0a0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #f8f8f8;
+}
+
+.divider {
+  color: #444;
+}
