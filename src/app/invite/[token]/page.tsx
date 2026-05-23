@@ -1,5 +1,4 @@
 import { headers } from 'next/headers';
-import { redirect } from 'next/navigation';
 import InviteRedirect from './InviteRedirect';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/even-steven/id0000000000';
@@ -22,12 +21,11 @@ export default async function InvitePage({
   const ua = headersList.get('user-agent') ?? '';
   const platform = detectPlatform(ua);
 
-  if (platform === 'android') {
-    redirect(PLAY_STORE_URL);
-  }
-
-  const deepLink = `evensteven://invite/${token}`;
-  const storeUrl = platform === 'ios' ? APP_STORE_URL : null;
+  const deepLink = ;
+  const storeUrl =
+    platform === 'ios' ? APP_STORE_URL :
+    platform === 'android' ? PLAY_STORE_URL :
+    null;
 
   return <InviteRedirect token={token} deepLink={deepLink} storeUrl={storeUrl} />;
 }
