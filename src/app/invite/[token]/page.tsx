@@ -21,7 +21,7 @@ export default async function InvitePage({
   const ua = headersList.get('user-agent') ?? '';
   const platform = detectPlatform(ua);
 
-  const deepLink = ;
+  const deepLink = `evensteven://invite/${token}`;
   const storeUrl =
     platform === 'ios' ? APP_STORE_URL :
     platform === 'android' ? PLAY_STORE_URL :
